@@ -1,0 +1,1 @@
+"use strict";angular.module("widgetkit").controller("woocommerceCtrl",["$scope",function(a){a.content.data.mapping||(a.content.data.mapping=[]);var t=this,n=a.content.data.mapping;t.mapping=n,angular.forEach(n,function(i,e){angular.isArray(i)&&(n[e]={})}),t.addMap=function(){n.push({})},t.deleteMap=function(i){n.splice(n.indexOf(i),1)}}]);
